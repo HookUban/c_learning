@@ -23,11 +23,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54074239-9306-4810-b726-32a323026538" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" />
-    </list>
+    <list default="true" id="54074239-9306-4810-b726-32a323026538" name="Changes" comment="tset_02" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +52,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C/C++ File.test_06_09_指针.c.executor": "Run",
+    "CMake Application.c_learning.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -110,8 +108,17 @@
       <option name="presentableId" value="Default" />
       <updated>1748010427020</updated>
       <workItem from="1748010428237" duration="2000" />
-      <workItem from="1749463170657" duration="405000" />
+      <workItem from="1749463170657" duration="730000" />
     </task>
+    <task id="LOCAL-00001" summary="tset_02">
+      <option name="closed" value="true" />
+      <created>1749463850154</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749463850154</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +128,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tset_02" />
+    <option name="LAST_COMMIT_MESSAGE" value="tset_02" />
   </component>
 </project>
