@@ -1,0 +1,3 @@
+C:/Users/xiaoh/Desktop/c_learning/game_five/cmake-build-debug/CMakeFiles/game_five.dir
+C:/Users/xiaoh/Desktop/c_learning/game_five/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/xiaoh/Desktop/c_learning/game_five/cmake-build-debug/CMakeFiles/rebuild_cache.dir

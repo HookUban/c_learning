@@ -1,0 +1,3 @@
+C:/Users/xiaoh/Desktop/c_learning/game_find_boom/cmake-build-debug/CMakeFiles/game_find_boom.dir
+C:/Users/xiaoh/Desktop/c_learning/game_find_boom/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/xiaoh/Desktop/c_learning/game_find_boom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
