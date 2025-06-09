@@ -1,7 +1,0 @@
-# ninja log v6
-4	366	7709209661836322	CMakeFiles/test_01.dir/test_01.c.obj	ed81172b91ddf9c0
-2	367	7711649432627791	build.ninja	4fb0ddea9ca7ed6b
-3	118	7699424210155970	CMakeFiles/test_01.dir/main.c.obj	dc38b492f20c29b1
-22	128	7698724583400648	CMakeFiles/test_01.dir/gass_number.c.obj	346d23afb6829c96
-140	345	7710245832781359	test_01.exe	ce26892d5a49890c
-3	101	7710246653754598	CMakeFiles/test_01.dir/2025_06_06.c.obj	5d7c12910dc2e956

@@ -1,3 +1,0 @@
-C:/Users/xiaoh/Desktop/c_learning/核心刷题框架/cmake-build-debug/CMakeFiles/main.c.dir
-C:/Users/xiaoh/Desktop/c_learning/核心刷题框架/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/xiaoh/Desktop/c_learning/核心刷题框架/cmake-build-debug/CMakeFiles/rebuild_cache.dir
