@@ -24,17 +24,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54074239-9306-4810-b726-32a323026538" name="Changes" comment="tset_03">
+      <change afterPath="$PROJECT_DIR$/test_06_09_野指针_指针运算.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-ed69e3b1e2ba73ae09b3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ac9059c357f250e7f98f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-06-09T09-59-57-0366.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-c_learning-Debug-bff0d7ab2c64c5060e0f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_06_09_指针_指针类型.c" beforeDir="false" afterPath="$PROJECT_DIR$/test_06_09_指针_指针类型.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_learning.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_learning.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +61,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.test_06_09_指针.c.executor": "Run",
+    "C/C++ File.test_06_09_野指针_指针运算.c.executor": "Run",
     "CMake Application.c_learning.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -84,7 +81,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.c_learning">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xiaoh\Desktop\c_learning" />
+    </key>
+  </component>
+  <component name="RunManager" selected="C/C++ File.test_06_09_野指针_指针运算.c">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -95,6 +97,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test_06_09_野指针_指针运算.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_learning" TARGET_NAME="test_06_09_野指针_指针运算.c" CONFIG_NAME="test_06_09_野指针_指针运算.c">
+      <option name="sourceFile" value="test_06_09_野指针_指针运算.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test_06_09_指针.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_learning" TARGET_NAME="test_06_09_指针.c" CONFIG_NAME="test_06_09_指针.c">
       <option name="sourceFile" value="test_06_09_指针.c" />
       <method v="2">
@@ -102,11 +110,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.test_06_09_野指针_指针运算.c" />
       <item itemvalue="C/C++ File.test_06_09_指针.c" />
       <item itemvalue="CMake Application.c_learning" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.test_06_09_野指针_指针运算.c" />
         <item itemvalue="C/C++ File.test_06_09_指针.c" />
       </list>
     </recent_temporary>
@@ -120,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748010427020</updated>
       <workItem from="1748010428237" duration="2000" />
-      <workItem from="1749463170657" duration="2782000" />
+      <workItem from="1749463170657" duration="5854000" />
     </task>
     <task id="LOCAL-00001" summary="tset_02">
       <option name="closed" value="true" />
