@@ -23,14 +23,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54074239-9306-4810-b726-32a323026538" name="Changes" comment="tset_03">
-      <change afterPath="$PROJECT_DIR$/test_06_09_野指针_指针运算.c" afterDir="false" />
+    <list default="true" id="54074239-9306-4810-b726-32a323026538" name="Changes" comment="tset_05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_learning.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_learning.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_06_09_野指针_指针运算.c" beforeDir="false" afterPath="$PROJECT_DIR$/test_06_09_野指针_指针运算.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748010427020</updated>
       <workItem from="1748010428237" duration="2000" />
-      <workItem from="1749463170657" duration="5854000" />
+      <workItem from="1749463170657" duration="9061000" />
     </task>
     <task id="LOCAL-00001" summary="tset_02">
       <option name="closed" value="true" />
@@ -148,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749463956104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tset_05">
+      <option name="closed" value="true" />
+      <created>1749474486626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749474486626</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tset_02" />
     <MESSAGE value="tset_03" />
-    <option name="LAST_COMMIT_MESSAGE" value="tset_03" />
+    <MESSAGE value="tset_05" />
+    <option name="LAST_COMMIT_MESSAGE" value="tset_05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
