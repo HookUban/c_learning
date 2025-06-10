@@ -24,8 +24,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54074239-9306-4810-b726-32a323026538" name="Changes" comment="tset_05">
+      <change afterPath="$PROJECT_DIR$/test_06_09_结构体.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_06_09_野指针_指针运算.c" beforeDir="false" afterPath="$PROJECT_DIR$/test_06_09_野指针_指针运算.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_06_09_野指针_指针运算.exe" beforeDir="false" afterPath="$PROJECT_DIR$/test_06_09_野指针_指针运算.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.test_06_09_指针.c.executor": "Run",
+    "C/C++ File.test_06_09_结构体.c.executor": "Run",
     "C/C++ File.test_06_09_野指针_指针运算.c.executor": "Run",
     "CMake Application.c_learning.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -81,7 +83,7 @@
       <recent name="C:\Users\xiaoh\Desktop\c_learning" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.test_06_09_野指针_指针运算.c">
+  <component name="RunManager" selected="C/C++ File.test_06_09_结构体.c">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -104,13 +106,21 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test_06_09_结构体.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_learning" TARGET_NAME="test_06_09_结构体.c" CONFIG_NAME="test_06_09_结构体.c">
+      <option name="sourceFile" value="test_06_09_结构体.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="C/C++ File.test_06_09_结构体.c" />
       <item itemvalue="C/C++ File.test_06_09_野指针_指针运算.c" />
       <item itemvalue="C/C++ File.test_06_09_指针.c" />
       <item itemvalue="CMake Application.c_learning" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.test_06_09_结构体.c" />
         <item itemvalue="C/C++ File.test_06_09_野指针_指针运算.c" />
         <item itemvalue="C/C++ File.test_06_09_指针.c" />
       </list>
@@ -125,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748010427020</updated>
       <workItem from="1748010428237" duration="2000" />
-      <workItem from="1749463170657" duration="9061000" />
+      <workItem from="1749463170657" duration="10455000" />
     </task>
     <task id="LOCAL-00001" summary="tset_02">
       <option name="closed" value="true" />

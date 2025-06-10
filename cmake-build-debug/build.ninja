@@ -55,6 +55,12 @@ build CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj: C_COMPILER
   OBJECT_DIR = CMakeFiles\c_learning.dir
   OBJECT_FILE_DIR = CMakeFiles\c_learning.dir
 
+build CMakeFiles/c_learning.dir/算法/demo_06_10_双指针_链表.c.obj: C_COMPILER__c_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/算法/demo_06_10_双指针_链表.c || cmake_object_order_depends_target_c_learning
+  DEP_FILE = CMakeFiles\c_learning.dir\算法\demo_06_10_双指针_链表.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\c_learning.dir
+  OBJECT_FILE_DIR = CMakeFiles\c_learning.dir\算法
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target c_learning
@@ -63,7 +69,7 @@ build CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj: C_COMPILER
 #############################################
 # Link the executable c_learning.exe
 
-build c_learning.exe: C_EXECUTABLE_LINKER__c_learning_Debug CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj
+build c_learning.exe: C_EXECUTABLE_LINKER__c_learning_Debug CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj CMakeFiles/c_learning.dir/算法/demo_06_10_双指针_链表.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\c_learning.dir

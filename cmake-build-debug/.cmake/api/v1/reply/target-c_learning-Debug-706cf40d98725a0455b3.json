@@ -52,7 +52,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -89,7 +90,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -99,6 +101,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "test_06_09_\u6307\u9488_\u6307\u9488\u7c7b\u578b.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "\u7b97\u6cd5/demo_06_10_\u53cc\u6307\u9488_\u94fe\u8868.c",
 			"sourceGroupIndex" : 0
 		}
 	],
