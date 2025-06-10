@@ -1,0 +1,5 @@
+# ninja log v6
+3	86	7712283685254332	CMakeFiles/debugger_release.dir/main.c.obj	e727ca45403a9fc1
+88	216	7712283686098267	debugger_release.exe	5aa4db30863a0c09
+7	123	7712285645518137	CMakeFiles/debugger_release.dir/main.c.obj	b23d7cce300d84b3
+124	323	7712285646689820	debugger_release.exe	5aa4db30863a0c09
