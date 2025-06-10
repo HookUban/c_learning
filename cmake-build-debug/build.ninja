@@ -49,17 +49,17 @@ cmake_ninja_workdir = C$:/Users/xiaoh/Desktop/c_learning/cmake-build-debug/
 
 build cmake_object_order_depends_target_c_learning: phony || .
 
-build CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj: C_COMPILER__c_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/test_06_09_指针_指针类型.c || cmake_object_order_depends_target_c_learning
-  DEP_FILE = CMakeFiles\c_learning.dir\test_06_09_指针_指针类型.c.obj.d
+build CMakeFiles/c_learning.dir/demo_06_09_指针_结构体/test_06_09_指针_指针类型.c.obj: C_COMPILER__c_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/demo_06_09_指针_结构体/test_06_09_指针_指针类型.c || cmake_object_order_depends_target_c_learning
+  DEP_FILE = CMakeFiles\c_learning.dir\demo_06_09_指针_结构体\test_06_09_指针_指针类型.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\c_learning.dir
-  OBJECT_FILE_DIR = CMakeFiles\c_learning.dir
+  OBJECT_FILE_DIR = CMakeFiles\c_learning.dir\demo_06_09_指针_结构体
 
-build CMakeFiles/c_learning.dir/算法/demo_06_10_双指针_链表.c.obj: C_COMPILER__c_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/算法/demo_06_10_双指针_链表.c || cmake_object_order_depends_target_c_learning
-  DEP_FILE = CMakeFiles\c_learning.dir\算法\demo_06_10_双指针_链表.c.obj.d
+build CMakeFiles/c_learning.dir/作业/demo_01.c.obj: C_COMPILER__c_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/作业/demo_01.c || cmake_object_order_depends_target_c_learning
+  DEP_FILE = CMakeFiles\c_learning.dir\作业\demo_01.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\c_learning.dir
-  OBJECT_FILE_DIR = CMakeFiles\c_learning.dir\算法
+  OBJECT_FILE_DIR = CMakeFiles\c_learning.dir\作业
 
 
 # =============================================================================
@@ -69,7 +69,7 @@ build CMakeFiles/c_learning.dir/算法/demo_06_10_双指针_链表.c.obj: C_COMP
 #############################################
 # Link the executable c_learning.exe
 
-build c_learning.exe: C_EXECUTABLE_LINKER__c_learning_Debug CMakeFiles/c_learning.dir/test_06_09_指针_指针类型.c.obj CMakeFiles/c_learning.dir/算法/demo_06_10_双指针_链表.c.obj
+build c_learning.exe: C_EXECUTABLE_LINKER__c_learning_Debug CMakeFiles/c_learning.dir/demo_06_09_指针_结构体/test_06_09_指针_指针类型.c.obj CMakeFiles/c_learning.dir/作业/demo_01.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\c_learning.dir

@@ -1,0 +1,3 @@
+C:/Users/xiaoh/Desktop/c_learning/测试debugger_release/cmake-build-debug/CMakeFiles/debugger_release.dir
+C:/Users/xiaoh/Desktop/c_learning/测试debugger_release/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/xiaoh/Desktop/c_learning/测试debugger_release/cmake-build-debug/CMakeFiles/rebuild_cache.dir
