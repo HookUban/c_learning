@@ -1,3 +1,9 @@
 # ninja log v6
-6	342	7713064696172171	CMakeFiles/labuladong_learning.dir/main.cpp.obj	40b0f161aee9641e
-346	481	7713064699566510	labuladong_learning.exe	9b32a91bb401faa4
+4	91	7713137622235517	CMakeFiles/labuladong_learning.dir/main.cpp.obj	40b0f161aee9641e
+366	502	7713137625861912	labuladong_learning.exe	8580d8614e189898
+3	313	7713251261650035	build.ninja	1932a386816b9915
+17	366	7713137622364647	CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj	929b74ecddb269f5
+5	358	7713287892283178	CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj	929b74ecddb269f5
+359	503	7713287895815322	labuladong_learning.exe	8580d8614e189898
+5	530	7713288128526161	CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj	929b74ecddb269f5
+530	701	7713288133785455	labuladong_learning.exe	8580d8614e189898

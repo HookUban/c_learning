@@ -55,8 +55,8 @@ build CMakeFiles/labuladong_learning.dir/main.cpp.obj: CXX_COMPILER__labuladong_
   OBJECT_DIR = CMakeFiles\labuladong_learning.dir
   OBJECT_FILE_DIR = CMakeFiles\labuladong_learning.dir
 
-build CMakeFiles/labuladong_learning.dir/merge_two_list.cpp.obj: CXX_COMPILER__labuladong_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/labuladong_learning/merge_two_list.cpp || cmake_object_order_depends_target_labuladong_learning
-  DEP_FILE = CMakeFiles\labuladong_learning.dir\merge_two_list.cpp.obj.d
+build CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj: CXX_COMPILER__labuladong_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/labuladong_learning/merge_tow_lists.cpp || cmake_object_order_depends_target_labuladong_learning
+  DEP_FILE = CMakeFiles\labuladong_learning.dir\merge_tow_lists.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\labuladong_learning.dir
   OBJECT_FILE_DIR = CMakeFiles\labuladong_learning.dir
@@ -69,7 +69,7 @@ build CMakeFiles/labuladong_learning.dir/merge_two_list.cpp.obj: CXX_COMPILER__l
 #############################################
 # Link the executable labuladong_learning.exe
 
-build labuladong_learning.exe: CXX_EXECUTABLE_LINKER__labuladong_learning_Debug CMakeFiles/labuladong_learning.dir/main.cpp.obj CMakeFiles/labuladong_learning.dir/merge_two_list.cpp.obj
+build labuladong_learning.exe: CXX_EXECUTABLE_LINKER__labuladong_learning_Debug CMakeFiles/labuladong_learning.dir/main.cpp.obj CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\labuladong_learning.dir
