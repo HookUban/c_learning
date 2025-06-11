@@ -3,4 +3,5 @@ project(labuladong_learning)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(labuladong_learning main.cpp)
+add_executable(labuladong_learning main.cpp
+        merge_two_list.cpp)
