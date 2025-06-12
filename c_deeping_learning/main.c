@@ -140,13 +140,125 @@ long
 //    }
 //    return 0;
 //}
-#include <string.h>
+//#include <string.h>
+//
+//int main()
+//{
+//    int len = strlen("abcdef");
+//    printf("%d\n", len);
+//
+//
+//
+//}
+
+
+
+// 字符指针
+// 数组指针
+// 指针数组
+
+//int main()
+//{
+////    char ch = 'w';
+////
+////    char* pc = &ch;
+////    printf("%c\n", ch);
+////    *pc = 'x';
+////
+////    printf("%c\n", *pc);
+//
+////    char* p = "abcdef"; // 把字符串的首字符a的地址赋值给了p
+////    printf("%s\n", p);
+////
+////    return 0;
+//
+////
+////    int arr1[] = {1, 2, 3, 4, 5};
+////    int arr2[] = {2, 3, 4, 5, 6};
+////    int arr3[] = {3, 4, 5, 6, 7};
+////
+////    int* parr[3] = {arr1, arr2, arr3};
+////
+////    int i = 0;
+////
+////    printf("%d\n",  sizeof(arr1) / sizeof(arr1[0]));
+////    for(i = 0; i < 3; i++)
+////    {
+////        int j = 0;
+////
+////        for (j = 0; j <5; j++)
+////        {
+////            printf("%d ", *(parr[i] + j));
+////            printf("%d ", parr[i][j]);
+////        }
+////
+////        printf("\n");
+////    }
+//
+//
+//    int *p1[10];        // p1是指针数组
+//    int (*p2)[10];      // p2是数组指针
+//
+//    char* arr[5] = {0};
+//    char* (*pc)[5];
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//    int (*p)[10] = &arr;
+//
+//    int sz = sizeof(arr) / sizeof(arr[0]);
+//    int i = 0;
+//    for(i = 0; i < sz; i++)
+//    {
+//        printf("%d\n", *(*p+i));
+//    }
+//
+//
+//
+//    return 0;
+//}
+
+void print1(int arr[3][5], int r, int c)
+{
+    int i = 0;
+    for (i = 0; i < r; i++)
+    {
+        int j = 0;
+        for (j = 0; j < c; j++){
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void print2(int (*p)[5], int r, int c)
+{
+    int i = 0;
+    for (i = 0; i < r; i++)
+    {
+        int j = 0;
+        for(j = 0; j < c; j++)
+        {
+//            printf("%d ", *(*(p+i)+j));
+            printf("%d ", p[i][j]);
+        }
+        printf("\n");
+
+    }
+}
+
 
 int main()
 {
-    int len = strlen("abcdef");
-    printf("%d\n", len);
+    int arr[3][5] = {1, 2, 3, 4, 5, 2, 3, 4, 5, 6, 3, 4, 5 ,6, 7};
 
+    print1(arr, 3, 5);
+    printf("\n");
+    print2(arr, 3, 5);
 
-
+    return 0;
 }
