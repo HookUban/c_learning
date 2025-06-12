@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(labuladong_learning main.cpp
         merge_tow_lists.cpp
+        DataStructure.cpp
+        select_pai.c
 )

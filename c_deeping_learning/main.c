@@ -107,14 +107,46 @@ long
 //    return 0;
 //}
 
+//int main()
+//{
+//    char a = 128;
+//    // 00000000 00000000 00000000 10000000   - 128
+//    // 10000000 - char a
+//    //
+//
+//    printf("&u\n", a);
+//
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    int i = -20;
+//    unsigned int j = 10;
+//    printf("%d\n", i + j);
+//    return 0;
+//
+//}
+
+//int main()
+//{
+//    unsigned char i = 0;
+//
+//
+//    for (i = 0; i <= 255; i++)
+//    {
+//        printf("%d\n", i);
+//    }
+//    return 0;
+//}
+#include <string.h>
+
 int main()
 {
-    char a = 128;
-    // 00000000 00000000 00000000 10000000   - 128
-    // 10000000 - char a
-    //
+    int len = strlen("abcdef");
+    printf("%d\n", len);
 
-    printf("&u\n", a);
 
-    return 0;
+
 }

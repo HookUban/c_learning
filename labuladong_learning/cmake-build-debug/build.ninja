@@ -61,6 +61,18 @@ build CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles\labuladong_learning.dir
   OBJECT_FILE_DIR = CMakeFiles\labuladong_learning.dir
 
+build CMakeFiles/labuladong_learning.dir/DataStructure.cpp.obj: CXX_COMPILER__labuladong_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/labuladong_learning/DataStructure.cpp || cmake_object_order_depends_target_labuladong_learning
+  DEP_FILE = CMakeFiles\labuladong_learning.dir\DataStructure.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\labuladong_learning.dir
+  OBJECT_FILE_DIR = CMakeFiles\labuladong_learning.dir
+
+build CMakeFiles/labuladong_learning.dir/select_pai.c.obj: C_COMPILER__labuladong_learning_unscanned_Debug C$:/Users/xiaoh/Desktop/c_learning/labuladong_learning/select_pai.c || cmake_object_order_depends_target_labuladong_learning
+  DEP_FILE = CMakeFiles\labuladong_learning.dir\select_pai.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\labuladong_learning.dir
+  OBJECT_FILE_DIR = CMakeFiles\labuladong_learning.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target labuladong_learning
@@ -69,7 +81,7 @@ build CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable labuladong_learning.exe
 
-build labuladong_learning.exe: CXX_EXECUTABLE_LINKER__labuladong_learning_Debug CMakeFiles/labuladong_learning.dir/main.cpp.obj CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj
+build labuladong_learning.exe: CXX_EXECUTABLE_LINKER__labuladong_learning_Debug CMakeFiles/labuladong_learning.dir/main.cpp.obj CMakeFiles/labuladong_learning.dir/merge_tow_lists.cpp.obj CMakeFiles/labuladong_learning.dir/DataStructure.cpp.obj CMakeFiles/labuladong_learning.dir/select_pai.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\labuladong_learning.dir
