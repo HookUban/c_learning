@@ -263,4 +263,26 @@ long
 //    return 0;
 //}
 
+int Add(int x, int y)
+{
+    return x+y;
+}
 
+
+int main()
+{
+
+    int arr[5] = {0};
+    int (*p)[5] = &arr; // 数组指针
+
+    printf("%p\n", &Add);
+    printf("%p\n", Add);
+
+
+    int (*pf)(int , int) = &Add;
+
+    int ret = (*pf)(1, 2);
+    printf("%d\n", ret);
+
+    return 0;
+}
