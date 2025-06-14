@@ -420,22 +420,18 @@ public:
 };
 
 // 输入一个数组，转换为一条单链表
-ListNode* createLinkedList(std::vector<int> arr) {
-    if (arr.empty()) {
-        return nullptr;
-    }
-    ListNode* head = new ListNode(arr[0]);
-    ListNode* cur = head;
-    for (int i = 1; i < arr.size(); i++) {
-        cur->next = new ListNode(arr[i]);
-        cur = cur->next;
-    }
-    return head;
-}
+//ListNode* createLinkedList(std::vector<int> arr) {
+//    if (arr.empty()) {
+//        return nullptr;
+//    }
+//    ListNode* head = new ListNode(arr[0]);
+//    ListNode* cur = head;
+//    for (int i = 1; i < arr.size(); i++) {
+//        cur->next = new ListNode(arr[i]);
+//        cur = cur->next;
+//    }
+//    return head;
+//}
 
-// 创建一条单链表
-ListNode* head = createLinkedList({1,2, 3, 4 , 5});
-// 在单链表头部插入一个新节点 0
-ListNode* newNode = new ListNode(0);
-newNode->next = head;
-head = newNode;
+
+
