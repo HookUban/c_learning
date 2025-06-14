@@ -311,90 +311,317 @@ long
 
 
 
-int Add(int x, int y)
+//int Add(int x, int y)
+//{
+//    return x + y;
+//}
+//
+//int Sub(int x, int y)
+//{
+//    return x - y;
+//}
+//
+//int Mul(int x, int y)
+//{
+//    return x * y;
+//}
+//
+//int Div(int x, int y)
+//{
+//    return x / y;
+//}
+//
+//
+//void calc (int (*pf)(int, int))
+//{
+//    int x = 0;
+//    int y = 0;
+//    int ret = 0;
+//
+//    printf("请输入两个数字:>");
+//    scanf("%d %d", &x, &y);
+//    ret = pf(x, y);
+//    printf("%d\n", ret);
+//
+//}
+
+//void menu()
+//{
+//    printf("*****************************\n");
+//    printf("******1. add   2. sub *******\n");
+//    printf("******3. mul   4. div *******\n");
+//    printf("******0.  exit        *******\n");
+//    printf("*****************************\n");
+//}
+
+//int main()
+//{
+//    setbuf(stdout, NULL);
+//
+//
+//    int input = 0;
+//
+//
+//    do
+//    {
+//        menu();
+//
+//        printf("请选择:>");
+//        scanf("%d", &input);
+//
+//
+//        switch (input)
+//        {
+//            case 1:
+//                calc(Add);
+//                break;
+//            case 2:
+//                calc(Sub);
+//                break;
+//            case 3:
+//                calc(Mul);
+//                break;
+//            case 4:
+//                calc(Div);
+//                break;
+//            case 0:
+//
+//                printf("退出程序\n");
+//                input = 0;
+//                break;
+//
+//            default:
+//                printf("输入错误，请重新输入\n");
+//        }
+//    }
+//    while (input);
+//
+//    return 0;
+//}
+
+//void menu()
+//{
+//    printf("*****************************\n");
+//    printf("******1. add   2. sub *******\n");
+//    printf("******3. mul   4. div *******\n");
+//    printf("******0.  exit        *******\n");
+//    printf("*****************************\n");
+//}
+//
+//int Add(int x, int y)
+//{
+//    return x + y;
+//}
+//
+//int Sub(int x, int y)
+//{
+//    return x - y;
+//}
+//
+//int Mul(int x, int y)
+//{
+//    return x * y;
+//}
+//
+//int Div(int x, int y)
+//{
+//    return x / y;
+//}
+//
+////int main()
+////{
+////    int (*arr[4])(int, int) = {Add, Sub, Mul, Div};
+////
+////
+////    int i = 0;
+////    for (i = 0; i< 4; i++)
+////    {
+////        int ret = arr[i](8, 4);
+////        printf("%d\n", ret);
+////    }
+////
+////
+////
+////    return 0;
+////}
+//
+//int main()
+//{
+//    setbuf(stdout, NULL);
+//    int input = 0;
+//    int x = 0;
+//    int y = 0;
+//    int ret = 0;
+//    // 函数指针数组
+//    // 转移表
+//
+//    int (*pfArr[5])(int, int) = {0, Add, Sub, Mul, Div};
+//
+//    do
+//    {
+//        menu();
+//        printf("请选择:>");
+//        scanf("%d", &input);
+//
+//        if (input == 0)
+//        {
+//            printf("退出程序\n");
+//        }
+//        else if(input >= 1 && input <= 4)
+//        {
+//            printf("请输入两个数字:>");
+//            scanf("%d %d", &x, &y);
+//            ret = pfArr[input](x, y);
+//            printf("%d\n", ret);
+//        }
+//
+//    }
+//    while (input);
+//
+//    return 0;
+//}
+
+
+
+// 回调函数
+
+
+int cmp(const void* e1, const void* e2)
 {
-    return x + y;
+    if (*(int*)e1 > *(int*) e2)
+    {
+        return 1;
+    }
+    else if(*(int*) e1 == *(int*) e1)
+    {
+        return 0;
+    }
+    else
+    {
+        return -1;
+    }
 }
 
-int Sub(int x, int y)
+void Swap(char* buf1, char* buf2, int width)
 {
-    return x - y;
+    int i = 0;
+    for (i = 0; i < width; i++)
+    {
+        char tmp = *buf1;
+        *buf1 = *buf2;
+        *buf2 = tmp;
+
+        buf1++;
+        buf2++;
+    }
 }
 
-int Mul(int x, int y)
+void bubble_sort(void*base, int sz, int width, int(*cmp)(const void*e1, const void*e2))
 {
-    return x * y;
+    int i = 0;
+
+    // 冒泡排序的趟数
+    for (i = 0; i < sz - 1; i++)
+    {
+        // 一趟冒泡排序的过程
+        int j = 0;
+        for (j = 0; j < sz - 1 - i; j++)
+        {
+            if (cmp((char*)base+j*width, (char*)base + (j+1)*width))
+            {
+                // 交换
+                Swap((char*)base+j*width, (char*)base + (j+1)*width, width);
+
+            }
+
+        }
+    }
 }
 
-int Div(int x, int y)
+
+
+void tset1()
 {
-    return x / y;
+    int arr[] = {9, 8, 7, 6, 5, 4, 3, 2,1 ,0};
+    // 把数组排成升序
+    int sz = sizeof(arr) / sizeof(arr[0]);
+
+//    bubble_sort(arr, sz);
+//    qsort(arr, sz, sizeof(arr[0]), cmp);
+    int i = 0;
+    for (i = 0; i < sz; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
 }
 
-
-void calc (int (*pf)(int, int))
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+struct Stu
 {
-    int x = 0;
-    int y = 0;
-    int ret = 0;
+    char name[20];
+    int age;
+};
 
-    printf("请输入两个数字:>");
-    scanf("%d %d", &x, &y);
-    ret = pf(x, y);
-    printf("%d\n", ret);
+
+int cmp_stu_by_name(const void* e1, const void* e2)
+{
+    return strcmp(((struct Stu*)e1)->name, ((struct Stu*) e2)->name);
+}
+int cmp_stu_by_age(const void* e1, const void* e2)
+{
+    return ((struct Stu*)e1)->age- ((struct Stu*) e2)->age;
+}
+void test2()
+{
+
+    // 测试使用qsort来排序结构数据
+
+    struct Stu s[] = {{"zhangsan", 19}, {"lisi", 18}, {"wangwu", 10}};
+    int sz = sizeof(s) / sizeof(s[0]);
+
+//    qsort(s, sz, sizeof(s[0]), cmp_stu_by_name);
+    qsort(s, sz, sizeof(s[0]), cmp_stu_by_age);
+}
+
+void tset3()
+{
+    int arr[] = {9, 8, 7, 6, 5, 4, 3, 2,1 ,0};
+    // 把数组排成升序
+    int sz = sizeof(arr) / sizeof(arr[0]);
+
+//    bubble_sort(arr, sz);
+    bubble_sort(arr, sz, sizeof(arr[0]), cmp);
+    int i = 0;
+    for (i = 0; i < sz; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 
 }
 
-void menu()
+void test4()
 {
-    printf("*****************************\n");
-    printf("******1. add   2. sub *******\n");
-    printf("******3. mul   4. div *******\n");
-    printf("******0.  exit        *******\n");
-    printf("*****************************\n");
+
+    // 测试使用qsort来排序结构数据
+
+    struct Stu s[] = {{"zhangsan", 19}, {"lisi", 18}, {"wangwu", 10}};
+    int sz = sizeof(s) / sizeof(s[0]);
+
+//    qsort(s, sz, sizeof(s[0]), cmp_stu_by_name);
+    bubble_sort(s, sz, sizeof(s[0]), cmp_stu_by_age);
+    printf("fffffff");
 }
 
 int main()
 {
-    setbuf(stdout, NULL);
+//    tset3();
 
-
-    int input = 0;
-
-
-    do
-    {
-        menu();
-
-        printf("请选择:>");
-        scanf("%d", &input);
-
-
-        switch (input)
-        {
-            case 1:
-                calc(Add);
-                break;
-            case 2:
-                calc(Sub);
-                break;
-            case 3:
-                calc(Mul);
-                break;
-            case 4:
-                calc(Div);
-                break;
-            case 0:
-
-                printf("退出程序\n");
-                input = 0;
-                break;
-
-            default:
-                printf("输入错误，请重新输入\n");
-        }
-    }
-    while (input);
+    test4();
 
     return 0;
+
 }
+
