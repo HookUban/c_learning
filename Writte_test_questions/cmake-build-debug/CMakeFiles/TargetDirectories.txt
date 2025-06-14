@@ -1,0 +1,3 @@
+C:/Users/xiaoh/Desktop/c_learning/Writte_test_questions/cmake-build-debug/CMakeFiles/Writte_test_questions.dir
+C:/Users/xiaoh/Desktop/c_learning/Writte_test_questions/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/xiaoh/Desktop/c_learning/Writte_test_questions/cmake-build-debug/CMakeFiles/rebuild_cache.dir
