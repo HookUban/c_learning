@@ -585,24 +585,141 @@ DoublyListNode* createDoublyLinkedList(vector<int> arr) {
 //
 //}
 
+//int main()
+//{
+//    DoublyListNode* head = createDoublyLinkedList({1, 2, 3, 4, 5});
+//
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//    cout<<endl;
+//    // 在双链表头部插入新节点0
+//    DoublyListNode* newNode = new DoublyListNode(0);
+//    newNode->next = head;
+//    head->prev = newNode;
+//    head = newNode;
+//
+//
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//}
+
+
+//int main()
+//{
+//    DoublyListNode* head = createDoublyLinkedList({1, 2, 3, 4, 5});
+//    DoublyListNode* tail = head;
+//    // 先走到链表的最后一个节点
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//
+//    while (tail->next != nullptr)
+//    {
+//        tail = tail->next;
+//    }
+//
+//    // 在双链表尾部插入新节点6
+//    DoublyListNode* newNode = new DoublyListNode(6);
+//    tail->next = newNode;
+//    newNode->prev = tail;
+//    // 更新成功
+//    tail = newNode;
+//
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//}
+
+//int main()
+//{
+//    DoublyListNode* head = createDoublyLinkedList({1, 2, 3 , 4, 5});
+//    DoublyListNode* p = head;
+//    for (int i = 0; i < 2; i++)
+//    {
+//        p = p->next;
+//    }
+//
+//    // 组装节点
+//    DoublyListNode* newNode = new DoublyListNode(66);
+//    newNode->next = p->next;
+//    newNode->prev = p;
+//
+//    p->next->prev = newNode;
+//    p->next = newNode;
+//
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//}
+
+//int main()
+//{
+//    DoublyListNode* head = createDoublyLinkedList({1, 2, 3, 4, 5});
+//
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//    // 删除第3个节点
+//    // 先找到第4个节点
+//    DoublyListNode* p = head;
+//    for (int i = 0; i < 2; i++)
+//    {
+//        p = p->next;
+//    }
+//
+//    // 现在p指向的第3个节点，我们将它后面的那个节点摘除出去
+//    DoublyListNode* toDelete = p->next;
+//
+//    // 把toDelete从链表中摘除
+//    p->next = toDelete->next;
+//    toDelete->next->prev = p;
+//
+//    toDelete->next = nullptr;
+//    toDelete->prev = nullptr;
+//
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//    }
+//}
+
+
 int main()
 {
+
+    // 创建一条双链表
     DoublyListNode* head = createDoublyLinkedList({1, 2, 3, 4, 5});
-
-    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+    for(DoublyListNode* p = head; p != nullptr; p = p->next)
     {
         cout<<p->val<<" ";
     }
-    cout<<endl;
-    // 在双链表头部插入新节点0
-    DoublyListNode* newNode = new DoublyListNode(0);
-    newNode->next = head;
-    head->prev = newNode;
-    head = newNode;
 
+    // 删除尾结点
+    DoublyListNode* p = head;
+    // 找到尾结点
+    while (p->next != nullptr)
+    {
+        p = p->next;
+    }
 
-    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+    // 现在p指向尾结点
+    // 把尾结点从链表中摘除
+    p->prev->next = nullptr;
+
+    // 把被删节点的指针都断开
+    p->prev = nullptr;
+
+    for(DoublyListNode* p = head; p != nullptr; p = p->next)
     {
         cout<<p->val<<" ";
     }
+
 }
