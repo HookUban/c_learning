@@ -1,10 +1,7 @@
-
 #include <cstring>
 #include <iostream>
 #include <vector>
-
 using namespace std;
-
 void my_print(int *arr, int len)
 {
     for (int i = 0; i < len; i++)
@@ -15,7 +12,6 @@ void my_print(int *arr, int len)
     cout<<endl;
 
 }
-
 //int main()
 //{
 ////    int a[10];
@@ -191,14 +187,10 @@ void my_print(int *arr, int len)
 //
 //    return 0;
 //}
-
-
 #include <iostream>
 #include <stdexcept>
 #include <vector>
-
 template <typename E>
-
 class MyArrayList
 {
 private:
@@ -390,8 +382,6 @@ public:
 
 
 };
-
-
 //int main()
 //{
 //    MyArrayList<int> arr(3);
@@ -411,7 +401,6 @@ public:
 //        std::cout<<arr.get(i)<<" ";
 //    }
 //}
-
 class ListNode {
 public:
     int val;
@@ -433,5 +422,187 @@ public:
 //    return head;
 //}
 
+ListNode* createLinkedList(std::vector<int> arr)
+{
+    if (arr.empty())
+    {
+        return nullptr;
+    }
+    ListNode* head = new ListNode(arr[0]);
+    ListNode* cur = head;
+    for (int i = 1; i< arr.size(); i++)
+    {
+        cur->next = new ListNode(arr[i]);
+        cur = cur->next;
+    }
+
+    return head;
+}
+//int main()
+//{
+//
+//    ListNode* head = createLinkedList({1, 2, 3, 4, 5});
+//
+//    for(ListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        std::cout<<p->val<<std::endl;
+//    }
+//
+//    return 0;
+//}
 
 
+//int main()
+//{
+////    // 创建一个链表
+////    ListNode* head = createLinkedList({1, 2, 3, 4, 5});
+////
+////    // 在单链表头部插入一个新节点0
+////    ListNode* newNode = new ListNode(0);
+////    newNode->next = head;
+////
+////    ListNode* p = newNode;
+////    while (p->next != nullptr)
+////    {
+////        std::cout<<p->val;
+////        p = p->next;
+////    }
+////    ListNode* a_p = new ListNode(6);
+////    p->next = a_p;
+////
+////
+//
+//
+//}
+
+//int main()
+//{
+//
+//    ListNode* head = createLinkedList({1,2,3, 4,5, 6});
+//
+//    // 在第三个节点后面插入一个新节点66
+//    // 现找到前驱节点，即第3个节点
+//    ListNode* p = head;
+//    for(int i = 0; i < 2; i++)
+//    {
+//        p = p->next;
+//    }
+//
+//    // 此时p指向第3个节点
+//    // 组装新节点的后驱节点
+//    ListNode* newNode = new ListNode(66);
+//    newNode->next = p->next;
+//
+//    // 插入新节点
+//    p->next = newNode;
+//}
+//int main()
+//{
+//    // 创建一条单链表
+//    ListNode* head = createLinkedList({1, 2, 3, 4, 5});
+//    // 删除第4个节点，要操作前驱节点
+//    ListNode* p = head;
+//
+//    for (int i = 0; i < 2; i++)
+//    {
+//        p = p->next;
+//    }
+//
+//    p->next = p->next->next;
+//
+//
+//
+//
+//}
+
+//int main()
+//{
+//    ListNode* head = createLinkedList({1, 2, 3, 4, 5});
+//    ListNode* p = head;
+//    for (ListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        std::cout<<p->val<<std::endl;
+//    }
+//    std::cout<<"------------------"<<std::endl;
+//    while (p->next->next != nullptr)
+//    {
+//        p = p->next;
+//    }
+//    p->next = nullptr;
+//
+//    for (ListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        std::cout<<p->val<<std::endl;
+//    }
+//}
+//
+
+
+class DoublyListNode {
+public:
+    int val;
+    DoublyListNode *next, *prev;
+    DoublyListNode(int x) : val(x), next(NULL), prev(NULL) {}
+};
+
+DoublyListNode* createDoublyLinkedList(vector<int> arr) {
+    if (arr.empty()) {
+        return NULL;
+    }
+    DoublyListNode* head = new DoublyListNode(arr[0]);
+    DoublyListNode* cur = head;
+    // for 循环迭代创建双链表
+    for (int i = 1; i < arr.size(); i++) {
+        DoublyListNode* newNode = new DoublyListNode(arr[i]);
+        cur->next = newNode;
+        newNode->prev = cur;
+        cur = cur->next;
+    }
+    return head;
+}
+
+//int main()
+//{
+//
+//    // 创建一条双链表
+//    DoublyListNode* head = createDoublyLinkedList({1, 2, 3, 4, 5});
+//
+//    DoublyListNode* tail = nullptr;
+//
+//    // 头结点向后遍历双链表
+//    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+//    {
+//        cout<<p->val<<" ";
+//        tail = p;
+//    }
+//
+//    // 尾结点向前遍历双链表
+//    for (DoublyListNode* p = tail; p != nullptr; p = p->prev)
+//    {
+//        cout<<p->val<<" ";
+//
+//    }
+//
+//}
+
+int main()
+{
+    DoublyListNode* head = createDoublyLinkedList({1, 2, 3, 4, 5});
+
+    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+    {
+        cout<<p->val<<" ";
+    }
+    cout<<endl;
+    // 在双链表头部插入新节点0
+    DoublyListNode* newNode = new DoublyListNode(0);
+    newNode->next = head;
+    head->prev = newNode;
+    head = newNode;
+
+
+    for (DoublyListNode* p = head; p != nullptr; p = p->next)
+    {
+        cout<<p->val<<" ";
+    }
+}
