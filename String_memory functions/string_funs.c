@@ -196,19 +196,118 @@ char* my_strstr(const char* str1, const char* str2)
     return NULL;
 }
 
-int main()
+//int main()
+//{
+////    char email1[] = {"zpw@bit.edu.cn"};
+//////    char email1[] = {"zpw@bi.com"};
+////
+////    if (my_strstr(email1, "@bit.edu.cn") != NULL)
+////    {
+////        printf("email is ok\n");
+////    }
+////    else
+////    {
+////        printf("email is error\n");
+////    }
+//
+//    char arr1[] = "abbbbbcdef";
+//    char arr2[] = "bb";
+//    char* ret = my_strstr(arr1, arr2);
+//    if (ret == NULL)
+//    {
+//        printf("子串不存在\n");
+//    }
+//    else
+//    {
+//        printf("%s\n", ret);
+//    }
+//
+//    return 0;
+//}
+
+// strtok 切割字符串
+
+//int main()
+//{
+//    const char* sep = "@.";
+//    char email[] = "zpw@bit.com";
+//
+//    char cp[30] = {0};
+//    strcpy(cp, email);
+//
+//    char* ret = strtok(cp, sep);
+//    while (ret != NULL)
+//    {
+//        printf("%s\n", ret);
+//        ret = strtok(NULL, sep);
+//    }
+//    return 0;
+//}
+
+// strerror
+
+
+
+//int main()
+//{
+//
+//    printf("%s\n", strerror(0));
+//    printf("%s\n", strerror(1));
+//    printf("%s\n", strerror(2));
+//    printf("%s\n", strerror(3));
+//    printf("%s\n", strerror(4));
+//    return 0;
+//}
+#include <errno.h>
+
+//int main()
+//{
+//    FILE* pf = fopen("test.txt", "r");
+//    if (pf == NULL)
+//    {
+//        printf("%s\n", strerror(errno));
+//    }
+//
+//    return 0;
+//}
+
+#include <ctype.h>
+
+//int main()
+//{
+//
+////    int a = isspace(' ');
+////    printf("%d\n", a);
+////
+////    int a = isdigit('a');
+////    printf("%d\n", a);
+//
+//    printf("%c\n", tolower('A'));
+//    return 0;
+//}
+
+void my_memcpy(void* dest, const void* src, size_t num)
 {
-    char email1[] = {"zpw@bit.edu.cn"};
-//    char email1[] = {"zpw@bi.com"};
+    assert(dest && src);
 
-    if (my_strstr(email1, "@bit.edu.cn") != NULL)
+    void* ret = dest;
+    while(num--)
     {
-        printf("email is ok\n");
-    }
-    else
-    {
-        printf("email is error\n");
+        *(char*)dest = *(char*)src;
+        dest = (char*)dest + 1;
+        src = (char*)src + 1;
     }
 
-    return 0;
+
 }
+
+//int main()
+//{
+//    // memcpy 内存copy
+//    int arr1[] = {1, 2, 3, 4, 5};
+//    int arr2[10] = {0};
+//
+//    my_memcpy(arr2, arr1, sizeof(arr1));
+//
+//    return 0;
+//}
