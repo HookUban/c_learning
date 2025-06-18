@@ -484,7 +484,7 @@ long
 
 
 // 回调函数
-
+/***************
 
 int cmp(const void* e1, const void* e2)
 {
@@ -615,13 +615,112 @@ void test4()
     printf("fffffff");
 }
 
-int main()
+//int main()
+//{
+////    tset3();
+//
+//    test4();
+//
+//    return 0;
+//
+//}
+//
+
+
+
+//int main()
+//{
+//
+//    int arr[] = {9, 8, 7, 6, 5, 4, 3, 2,1 ,0};
+//
+//    for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+//    {
+//        if (arr[i] & 0x01 == 1)
+//        {
+//            printf("%d ", arr[i]);
+//        }
+//    }
+//
+//    return 0;
+//}
+
+void right_rotate(char* arr, int sz, int k)
 {
-//    tset3();
+    int i= 0;
+    for (i = 0; i < k; i++)
+    {
+        char tmp = arr[0];
+        int j = 0;
+        for (j = 0; j < sz - 1; j++)
+        {
+            arr[j] = arr[j+1];
+        }
+        arr[sz - 1] = tmp;
+    }
+}
 
-    test4();
 
-    return 0;
+//int main()
+//{
+//    char arr[] = "abcdef";
+//    int k = 3;
+//
+//    int sz = sizeof(arr) / sizeof(arr[0]) - 1;
+//
+//    right_rotate(arr, sz, k);
+//
+//    printf("%s\n", arr);
+//    return 0;
+//}
+
+
+
+struct Point {
+    int x;
+    int y;
+};
+struct Point find_num(int arr[3][3], int r, int c, int num)
+{
+    int x = 0;
+    int y = c - 1;
+
+    struct Point p = {-1, -1};
+    while (x < r - 1 && y >= 0)
+    {
+        if (num < arr[x][y])
+        {
+            y--;
+        }
+        else if(num > arr[x][y])
+        {
+            x++;
+        }
+        else
+        {
+            p.x = x;
+            p.y=  y;
+            return p;
+        }
+    }
+    return p;
 
 }
+
+
+//int main()
+//{
+//    int arr[3][3] = {1, 2, 3, 4, 5, 6,7, 8, 9};
+//
+//    int k = 0;
+//
+//    scanf("%d", &k);
+//
+//    struct Point ret = find_num(arr, 3, 3, k);
+//    printf("%d %d\n", ret.x, ret.y);
+//
+//    return 0;
+//}
+
+*******************/
+
 
