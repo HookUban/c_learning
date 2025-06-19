@@ -3,4 +3,7 @@ project(EnumerationsAndUnions C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(EnumerationsAndUnions main.c)
+add_executable(
+        EnumerationsAndUnions main.c
+
+)

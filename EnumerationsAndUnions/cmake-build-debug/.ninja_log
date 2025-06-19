@@ -1,0 +1,18 @@
+# ninja log v6
+8	333	7720164359127626	build.ninja	55b37bbcc7f140b7
+2	120	7720164359497146	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+122	295	7720164360693952	EnumerationsAndUnions.exe	4501986e34b29738
+3	122	7720164560021986	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+123	286	7720164561224048	EnumerationsAndUnions.exe	4501986e34b29738
+4	107	7720164653626158	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+107	330	7720164654656091	EnumerationsAndUnions.exe	4501986e34b29738
+3	120	7720169785423889	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+121	347	7720169786595979	EnumerationsAndUnions.exe	4501986e34b29738
+3	112	7720170128074789	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+113	304	7720170129164135	EnumerationsAndUnions.exe	4501986e34b29738
+4	134	7720180218072636	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+135	354	7720180219371519	EnumerationsAndUnions.exe	4501986e34b29738
+3	99	7720181338113800	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+100	293	7720181339072224	EnumerationsAndUnions.exe	4501986e34b29738
+4	123	7720181693797455	CMakeFiles/EnumerationsAndUnions.dir/main.c.obj	ee52d960f3d730c5
+124	289	7720181694993059	EnumerationsAndUnions.exe	4501986e34b29738
