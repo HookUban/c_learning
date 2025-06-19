@@ -724,3 +724,136 @@ struct Point find_num(int arr[3][3], int r, int c, int num)
 *******************/
 
 
+//struct Stu
+//{
+//    // 学生的相关属性
+//    char name[20];
+//    int age;
+//
+//};
+
+// 匿名结构体
+// 匿名结构体只能使用一次
+struct
+{
+    char name[20];
+    int age;
+} s1;
+
+
+struct s1
+{
+    char c1;
+    int i;
+    char c2;
+};
+
+struct s2
+{
+    char c1;
+    char c2;
+    int i;
+
+};
+
+#include <stddef.h>
+
+
+//int  main()
+//{
+//    printf("%d\n", sizeof(struct s1));
+//    printf("%d\n", sizeof(struct s2));
+//
+//    printf("%d %d %d\n", offsetof(struct s1, c1), offsetof(struct s1, i), offsetof(struct s1, c2));
+//
+//}
+
+
+#pragma pack(4)
+
+struct Stu
+{
+    int i;
+    double d;
+};
+#pragma pack()
+
+//int main()
+//{
+//    printf("%d\n", sizeof(struct Stu));
+//    return 0;
+//}
+
+//struct S
+//{
+//    int data[1000];
+//    int num;
+//};
+
+//void print1(const struct S s)
+//{
+//    int i = 0;
+//    for (i = 0; i < 3; i++)
+//    {
+//        printf("%d ", s.data[i]);
+//    }
+//    printf("%d\n", s.num);
+//
+//}
+//void print2(const struct S* s)
+//{
+//    int i = 0;
+//    for (i = 0 ; i < 3; i++)
+//    {
+//        printf("%d ", s->data[i]);
+//    }
+//
+//    printf("%d\n", s->num);
+//}
+
+
+#include <time.h>
+
+//int main()
+//{
+//
+//    struct S s = {{1, 2, 3}, 100};
+//    print1(s);
+//    print2(&s);
+//
+//    return 0;
+//}
+
+struct A
+{
+    int _a:2;
+    int _b:5;
+    int _c:10;
+    int _d:30;
+
+};
+//
+//int main()
+//{
+//    printf("%d\n", sizeof(struct A));
+//}
+
+struct S
+{
+    char a:3;
+    char b:4;
+    char c:5;
+    char d:4;
+};
+
+int main()
+{
+    struct S s = {0};
+    s.a = 10;       // 010
+    s.b = 12;       // 1100
+    s.c = 3;        // 0011
+    s.d = 4;        // 0100
+    printf("%d\n", sizeof(s));
+    printf("%d %d %d %d\n", s.a, s.b, s.c, s.d);
+    return 0;
+}

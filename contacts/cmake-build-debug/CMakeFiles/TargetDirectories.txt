@@ -1,0 +1,3 @@
+C:/Users/xiaoh/Desktop/c_learning/contacts/cmake-build-debug/CMakeFiles/contacts.dir
+C:/Users/xiaoh/Desktop/c_learning/contacts/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/xiaoh/Desktop/c_learning/contacts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
