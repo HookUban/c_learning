@@ -2,6 +2,17 @@
 #include "contacts.h"
 
 
+enum OPTION
+{
+    EXIT=0,
+    ADD,
+    DEL,
+    SEARCH,
+    MODIFY,
+    SHOW,
+    SORT,
+
+};
 
 void menu()
 {
@@ -31,25 +42,26 @@ int main(void) {
         scanf("%d", &input);
         switch(input)
         {
-            case 1:
+            case ADD:
                 AddContact(&con);
                 break;
-            case 2:
+            case DEL:
                 DelContact(&con);
                 break;
-            case 3:
+            case SEARCH:
                 SearchContact(&con);
                 break;
-            case 4:
+            case MODIFY:
                 ModifyContact(&con);
                 break;
-            case 5:
+            case SHOW:
                 ShowContact(&con);
                 break;
-            case 6:
+            case SORT:
                 SortContact(&con);
                 break;
-            case 0:
+            case EXIT:
+                SaveContact(&con);
                 DestroyContact(&con);
                 printf("退出通讯录\n");
                 break;

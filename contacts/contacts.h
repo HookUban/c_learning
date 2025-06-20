@@ -94,4 +94,11 @@ void ModifyContact(Contact* pc);
 
 void SortContact(Contact* pc);
 
+
+// 保存通讯录的信息到文件
+void SaveContact(const Contact* pc);
+
+
+void LoadContact(Contact* pc);
+
 #endif //CONTACTS_CONTACTS_H

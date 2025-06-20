@@ -4,7 +4,6 @@
 //    printf("Hello, World!\n");
 //    return 0;
 //}
-
 /**
 char 1
 short 2
@@ -37,10 +36,6 @@ long
 联合类型
 
 **/
-
-
-#include <stdio.h>
-
 /***
  *
  *
@@ -53,7 +48,6 @@ long
  *
  *
  * **/
-
 //
 //int main()
 //{
@@ -722,8 +716,6 @@ struct Point find_num(int arr[3][3], int r, int c, int num)
 //}
 
 *******************/
-
-
 //struct Stu
 //{
 //    // 学生的相关属性
@@ -734,6 +726,7 @@ struct Point find_num(int arr[3][3], int r, int c, int num)
 
 // 匿名结构体
 // 匿名结构体只能使用一次
+/*
 struct
 {
     char name[20];
@@ -755,10 +748,7 @@ struct s2
     int i;
 
 };
-
-#include <stddef.h>
-
-
+*/
 //int  main()
 //{
 //    printf("%d\n", sizeof(struct s1));
@@ -767,7 +757,6 @@ struct s2
 //    printf("%d %d %d\n", offsetof(struct s1, c1), offsetof(struct s1, i), offsetof(struct s1, c2));
 //
 //}
-
 /*
 
 #pragma pack(4)
@@ -779,7 +768,6 @@ struct Stu
 };
 #pragma pack()
 */
-
 //int main()
 //{
 //    printf("%d\n", sizeof(struct Stu));
@@ -812,10 +800,6 @@ struct Stu
 //
 //    printf("%d\n", s->num);
 //}
-
-
-#include <time.h>
-
 //int main()
 //{
 //
@@ -875,47 +859,196 @@ struct Stu
 //
 //    return 0;
 //}
-#include <stdlib.h>
-
-
+/*
 struct S
 {
     int n;
     int arr[];
+};*/
+//int main()
+//{
+//
+////    sizeof(struct S);
+////    printf("%d\n", sizeof(struct S));
+//
+//    // 柔性数组的使用
+//    struct S* ps = (struct S*)malloc(sizeof(struct S) + 40);
+//    ps->n = 10;
+//
+//    int i = 0;
+//
+//    for(i = 0; i < 10; i++)
+//    {
+//        ps->arr[i] = i;
+//    }
+//    for(i = 0; i < 10; i++)
+//    {
+//        printf("%d ", ps->arr[i]);
+//    }
+//
+//    struct S* ptr = (struct S*)realloc(ps, sizeof(struct S) + 80);
+//    if (ptr != NULL)
+//    {
+//        ps = ptr;
+//    }
+//    //...
+//
+//    free(ps);
+//    ps = NULL;
+//
+//
+//
+//    return 0;
+//}
+
+//#include <stdlib.h>
+//#include <time.h>
+//#include <stddef.h>
+//
+//#include <stdio.h>
+//
+//#define MAX(a, b) ((a)>(b)?(a):(b))
+//
+//int main()
+//{
+//    int m = MAX(2, 3);
+//    printf("%d", m);
+//    return 0;
+//}
+
+/*
+#include <stddef.h>
+#include <stdio.h>
+
+struct S
+{
+    char c1;
+    int i;
+    char c2;
 };
+int main()
+{
+    struct S s = {0};
+    printf("%d\n", offsetof(struct S, c1));
+    printf("%d\n", offsetof(struct S, i));
+    printf("%d\n", offsetof(struct S, c2));
+
+    return 0;
+}
+*/
+
+//#include <stdio.h>
+//
+//
+//void find_single_dog(int* arr, int sz, int* pd1, int* pd2)
+//{
+//    int i = 0;
+//    int ret = 0;
+//    for (i = 0; i < sz; i++)
+//    {
+//        ret ^= arr[i];
+//    }
+//    // 计算ret的二进制中左右两边第几位是1
+//    int pos = 0;
+//    for (pos = 0; pos <= 32; pos++)
+//    {
+//        if(((ret>>pos)&1) == 1)
+//        {
+//            break;
+//        }
+//    }
+//
+//    for (i = 0; i < sz; i++)
+//    {
+//        if (((arr[i] >> pos) & 1) == 1)
+//        {
+//            *pd1 ^= arr[i];
+//        }
+//        else
+//        {
+//            *pd2 ^= arr[i];
+//        }
+//    }
+//}
+//
+//
+//int main()
+//{
+//    int arr[] = {1, 2, 3, 4, 5, 1, 2, 3, 4, 6};
+//
+//    // 分组
+//    int sz = sizeof(arr) / sizeof(arr[0]);
+//    int dog1 = 0;
+//    int dog2 = 0;
+//    find_single_dog(arr, sz, &dog1, &dog2);
+//    printf("%d %d\n", dog1, dog2);
+//
+//    return 0;
+//}
+#include <stdlib.h>
+#include <assert.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+// 空指针处理
+// 空字符串
+// 空格
+// +-
+// 越界，非数字字符
+
+
+
+enum Status
+{
+    VALID,
+    INVALID
+} sta = INVALID;    // 默认非法
+int my_atoi(const char* str)
+{
+    int flag = 1;
+
+    assert(str);
+    if(*str == '\0')
+        return 0;
+    while (isspace(*str))
+    {
+        str++;
+    }
+    if (*str == '+')
+    {
+        flag = 1;
+        str++;
+    }
+    else if(*str == '-')
+    {
+        flag = -1;
+        str++;
+    }
+
+    int ret = 0;
+    while (*str)
+    {
+        ret = ret * 10 + (*str - '0');
+        str++;
+    }
+
+    return flag*ret;
+}
+
 
 int main()
 {
-
-//    sizeof(struct S);
-//    printf("%d\n", sizeof(struct S));
-
-    // 柔性数组的使用
-    struct S* ps = (struct S*)malloc(sizeof(struct S) + 40);
-    ps->n = 10;
-
-    int i = 0;
-
-    for(i = 0; i < 10; i++)
+    char arr[20] = "-123456";
+    int ret = my_atoi(arr);
+    if (sta == INVALID)
     {
-        ps->arr[i] = i;
+
     }
-    for(i = 0; i < 10; i++)
+    else if(sta == VALID)
     {
-        printf("%d ", ps->arr[i]);
+
     }
-
-    struct S* ptr = (struct S*)realloc(ps, sizeof(struct S) + 80);
-    if (ptr != NULL)
-    {
-        ps = ptr;
-    }
-    //...
-
-    free(ps);
-    ps = NULL;
-
-
+    printf("%d\n", ret);
 
     return 0;
 }
