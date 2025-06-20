@@ -768,6 +768,7 @@ struct s2
 //
 //}
 
+/*
 
 #pragma pack(4)
 
@@ -777,6 +778,7 @@ struct Stu
     double d;
 };
 #pragma pack()
+*/
 
 //int main()
 //{
@@ -824,36 +826,96 @@ struct Stu
 //    return 0;
 //}
 
-struct A
-{
-    int _a:2;
-    int _b:5;
-    int _c:10;
-    int _d:30;
-
-};
+//struct A
+//{
+//    int _a:2;
+//    int _b:5;
+//    int _c:10;
+//    int _d:30;
+//
+//};
+////
+////int main()
+////{
+////    printf("%d\n", sizeof(struct A));
+////}
+//
+//struct S
+//{
+//    char a:3;
+//    char b:4;
+//    char c:5;
+//    char d:4;
+//};
 //
 //int main()
 //{
-//    printf("%d\n", sizeof(struct A));
+//    struct S s = {0};
+//    s.a = 10;       // 010
+//    s.b = 12;       // 1100
+//    s.c = 3;        // 0011
+//    s.d = 4;        // 0100
+//    printf("%d\n", sizeof(s));
+//    printf("%d %d %d %d\n", s.a, s.b, s.c, s.d);
+//    return 0;
 //}
+
+
+
+//int main()
+//{
+//    long i;
+//    long a[16];
+//
+//    for (i = 0; i <= 17; i++)
+//    {
+//        a[i] = 0;
+//        printf("%d ", i);
+//    }
+//
+//    return 0;
+//}
+#include <stdlib.h>
+
 
 struct S
 {
-    char a:3;
-    char b:4;
-    char c:5;
-    char d:4;
+    int n;
+    int arr[];
 };
 
 int main()
 {
-    struct S s = {0};
-    s.a = 10;       // 010
-    s.b = 12;       // 1100
-    s.c = 3;        // 0011
-    s.d = 4;        // 0100
-    printf("%d\n", sizeof(s));
-    printf("%d %d %d %d\n", s.a, s.b, s.c, s.d);
+
+//    sizeof(struct S);
+//    printf("%d\n", sizeof(struct S));
+
+    // 柔性数组的使用
+    struct S* ps = (struct S*)malloc(sizeof(struct S) + 40);
+    ps->n = 10;
+
+    int i = 0;
+
+    for(i = 0; i < 10; i++)
+    {
+        ps->arr[i] = i;
+    }
+    for(i = 0; i < 10; i++)
+    {
+        printf("%d ", ps->arr[i]);
+    }
+
+    struct S* ptr = (struct S*)realloc(ps, sizeof(struct S) + 80);
+    if (ptr != NULL)
+    {
+        ps = ptr;
+    }
+    //...
+
+    free(ps);
+    ps = NULL;
+
+
+
     return 0;
 }

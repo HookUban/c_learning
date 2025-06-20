@@ -1,24 +1,96 @@
 
 #include "contacts.h"
 
+// 静态版本
+//void InitContact(Contact* pc)
+//{
+//    assert(pc);
+//    pc->count = 0;
+//    memset(pc->data, 0, sizeof(pc->data));
+//
+//}
 
-void InitContact(Contact* pc)
+
+// 动态版本
+int InitContact(Contact* pc)
 {
     assert(pc);
     pc->count = 0;
-    memset(pc->data, 0, sizeof(pc->data));
+    pc->data = calloc(DEFAULT_SZ, sizeof(PeoInfo));
 
+    if (pc->data == NULL)
+    {
+        printf("InitContact::%s\n", strerror(errno));
+        return 1;
+    }
+    pc->capacity = DEFAULT_SZ;
+    return 0;
 }
 
+
+void DestroyContact(Contact* pc)
+{
+    assert(pc);
+    free(pc->data);
+    pc->data = NULL;
+    pc->count = 0;
+}
+
+
+// 静态版本
+//void AddContact(Contact* pc)
+//{
+//    assert(pc);
+//    if (pc->count == MAX)
+//    {
+//        printf("通讯录已满， 无法添加\n");
+//        return ;
+//    }
+//
+//    printf("请输入名字:>");
+//    scanf("%s", pc->data[pc->count].name);
+//    printf("请输入年龄:>");
+//    scanf("%d", &(pc->data[pc->count].age));
+//    printf("请输入性别:>");
+//    scanf("%s", pc->data[pc->count].sex);
+//    printf("请输入电话:>");
+//    scanf("%s", pc->data[pc->count].tele);
+//    printf("请输入地址:>");
+//    scanf("%s", pc->data[pc->count].addr);
+//
+//    pc->count++;
+//
+//    printf("添加成功\n");
+//
+//}
+// 动态版本
+
+void CheckCapacity(Contact* pc)
+{
+    if (pc->count == pc->capacity)
+    {
+        printf("通讯录已满， 增加容量\n");
+        PeoInfo* ptr = (PeoInfo*)(pc->data, sizeof(PeoInfo) * (pc->capacity + INC_SZ));
+        if (ptr == NULL)
+        {
+            printf("AddCount::%s\n", strerror(errno));
+            return ;
+        }
+        else
+        {
+            pc->data = ptr;
+            pc->capacity += INC_SZ;
+            printf("增加容量成功\n");
+        }
+
+    }
+}
 
 void AddContact(Contact* pc)
 {
     assert(pc);
-    if (pc->count == MAX)
-    {
-        printf("通讯录已满， 无法添加\n");
-        return ;
-    }
+    // 增加容量
+    CheckCapacity(pc);
 
     printf("请输入名字:>");
     scanf("%s", pc->data[pc->count].name);
@@ -36,7 +108,6 @@ void AddContact(Contact* pc)
     printf("添加成功\n");
 
 }
-
 
 void ShowContact(const Contact* pc)
 {
